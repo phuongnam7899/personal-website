@@ -1,0 +1,48 @@
+@import '../../../../styles/common.scss';
+
+
+.hot-posts-section {
+    padding-left: 2.5rem;
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+    .hot-posts {
+        .hot-post-preview {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            &:hover {
+                .number {
+                    border: 1px solid $primary-color
+                }
+                .title {
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+            }
+            .number {
+                text-align: center;
+                line-height: 2rem;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 1rem;
+                border: 1px solid $dark-color;
+                margin-right: 1rem;
+            }
+            .content {
+                .title {
+                    font-weight: 600;
+                    max-width: 25rem;
+                    margin-bottom: 0.5rem;
+                    width: 100%;
+                }
+                .date {
+                    font-style: italic;
+                }
+            }
+
+        }
+    }
+}

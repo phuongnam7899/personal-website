@@ -15,7 +15,7 @@ export const SubPageIntro = () => {
           </div>
         </FlipCardFront>
         <FlipCardBack>
-          <Link to="/portfolio" className="sub-page-intro-item">
+          <Link to="/portfolio" className="sub-page-intro-item back">
             <i className="far fa-file-alt big-icon"></i>
             <div className="intro">
               Check out my portfolio to know what I’ve worked on
@@ -33,7 +33,7 @@ export const SubPageIntro = () => {
           </div>
         </FlipCardFront>
         <FlipCardBack>
-          <Link to="/blog" className="sub-page-intro-item">
+          <Link to="/blog" className="sub-page-intro-item back">
             <i class="fas fa-pen-nib big-icon"></i>
             <div className="intro">See what I found in my blog</div>
           </Link>
@@ -47,7 +47,7 @@ export const SubPageIntro = () => {
           </div>
         </FlipCardFront>
         <FlipCardBack>
-          <Link to="/portfolio" className="sub-page-intro-item">
+          <Link to="/playground" className="sub-page-intro-item back">
             <i class="far fa-laugh-squint big-icon"></i>
             <div className="intro">Let's go to playground!</div>
           </Link>

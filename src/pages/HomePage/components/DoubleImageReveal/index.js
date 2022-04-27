@@ -25,7 +25,6 @@ export const DoubleImageReveal = ({ imgTop, imgBack, width, height }) => {
       <img
         style={{
           width: `${topImageWidthPercentage}%`,
-          borderRight: "1px solid #fff",
         }}
         src={imgTop}
       />

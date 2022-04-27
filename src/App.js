@@ -1,6 +1,6 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { MainLayout } from './components';
-import { HomePage } from './pages';
+import { BlogPage, HomePage } from './pages';
 import './App.scss'
 
 
@@ -10,6 +10,7 @@ function App() {
      <MainLayout>
        <Routes>
          <Route path='/' element={<HomePage/>}/>
+         <Route path='/blog' element={<BlogPage/>}/>
        </Routes>
      </MainLayout>
     </BrowserRouter>
