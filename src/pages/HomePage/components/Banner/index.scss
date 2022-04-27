@@ -1,0 +1,39 @@
+@import '../../../../styles/common.scss';
+
+
+.banner {
+  display: flex;
+  height: calc(100vh - 4rem);
+  align-items: center;
+  justify-content: center;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    .welcome {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    .web-name {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+      width: fit-content;
+      animation: rotateXZ 0.5s 1s;
+      text-shadow: 1px 0 0 $dark-color, -1px 0 0 #000, 0 1px 0 $dark-color,
+        0 -1px 0 $dark-color, 1px 1px $dark-color, -1px -1px 0 $dark-color,
+        1px -1px 0 $dark-color, -1px 1px 0 $dark-color;
+      &:hover {
+        transform: rotate3d(1, 0, 1, 360deg);
+        color: rgb(255, 255, 184);
+      }
+    }
+    .description {
+      width: 20rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

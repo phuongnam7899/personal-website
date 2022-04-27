@@ -1,0 +1,36 @@
+@import '../../../../styles/common.scss';
+
+.post-preview {
+  box-shadow: 0 0 8px rgb(221, 221, 221);
+  // border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgb(189, 189, 189);
+    .post-title {
+        color: $primary-color;
+    }
+  }
+  .content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .tags {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+    .post-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+}

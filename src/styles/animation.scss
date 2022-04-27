@@ -1,0 +1,7 @@
+@keyframes rotateXZ {
+    from {
+    }
+    to {
+      transform: rotate3d(1, 0, 1, 360deg);
+    }
+}
