@@ -1,9 +1,9 @@
-export const CommingSoon = () => {
+export const CommingSoon = ({customMessage}) => {
     return <div>
         
         <div className="not-found">
         <img src="https://c.tenor.com/XYidKqUdCeMAAAAM/dog-running.gif"/>
-        <div>Comming soon...</div>
+        <div>{customMessage || 'Comming soon...'}</div>
     </div>
     </div>
 }

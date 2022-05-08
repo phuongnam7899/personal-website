@@ -4,3 +4,4 @@ export * from './NotFoundPage';
 export * from './PortfolioPage';
 export * from './PlaygroundPage';
 export * from './AboutPage';
+export * from './SquigglyPage';

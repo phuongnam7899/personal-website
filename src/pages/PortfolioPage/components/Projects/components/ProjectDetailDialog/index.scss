@@ -1,0 +1,47 @@
+@import '../../../../../../styles/common.scss';
+
+.project-detail-dialog {
+  width: 75vw;
+  height: 85vh;
+  overflow: scroll;
+  padding: 1rem;
+  .project-name {
+    margin-bottom: 2rem;
+  }
+  .tags {
+    margin-bottom: 1rem;
+  }
+  .description {
+    margin-bottom: 2rem;
+  }
+  .url {
+    b {
+      margin-right: 0.25rem;
+    }
+    a {
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    margin-bottom: 1rem;
+  }
+  .title {
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .features-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    .feature-name {
+        margin-bottom: 0.5rem;
+    }
+    img {
+      width: 100%;
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid $box-shadow-light;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../../../../styles/common.scss';
+
+.project-item {
+    display: flex;
+    height: 250px;
+    margin-bottom: 2rem;
+    border: 1px solid $box-shadow-light;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 4px $box-shadow-light;
+    }
+    img {
+      width: 300px;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .detail {
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      .prj-name {
+        margin-bottom: 1rem;
+      }
+      .tags {
+        margin-bottom: 1rem;
+      }
+    }
+  }
