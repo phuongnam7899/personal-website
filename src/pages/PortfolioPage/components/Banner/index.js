@@ -3,14 +3,16 @@ import cv from "./CV.pdf";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import './index.scss'
+import { Dialog } from "../../../../components";
 
 export const Banner = () => {
   const [showCV, setShowCV] = useState(false);
 
   const memorizedCV = useMemo(() => {
     return (
+      <Dialog>
       <div className="cv">
-        <Viewer fileUrl={cv} defaultScale={1.25} />
+        <Viewer fileUrl={cv} defaultScale={1.5} />
         <div className="actions">
           <button>
             <Link to={cv} target="_blank" download="CV-Nguyen-Phuong-Nam">
@@ -26,6 +28,7 @@ export const Banner = () => {
           </button>
         </div>
       </div>
+      </Dialog>
     );
   }, []);
 
