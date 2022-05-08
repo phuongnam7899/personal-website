@@ -1,62 +1,60 @@
 import { HotPost, PostPreview } from "./components";
 import Masonry from "@mui/lab/Masonry";
 import "./index.scss";
-import { CommingSoon } from "../../components";
 
 export const BlogPage = () => {
-  return <CommingSoon/>
   return (
     <div className="blog-page">
       <div className="left-section">
         <Masonry columns={2} spacing={4}>
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="consectetur adipiscing elit"
           />
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc Phát hiện chú chó màu cam mắt đang liếc Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis imperdiet egestas..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="Lorem ipsum dolor sit amet, consectetur"
           />
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet, consectetur..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="Lorem ipsum dolor sit amet"
             previewImg="https://www.liveabout.com/thmb/Mic8lTNtkinmYKp9F4AQ5ArxQH0=/478x478/smart/filters:no_upscale()/dog-mem-wink-571fa6d55f9b58857d2751bb.jpg"
           />
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="Lorem ipsum dolor sit amet"
             previewImg="https://images.hindustantimes.com/img/2021/11/03/550x309/Doge_meme_dog_birthday_1635925455510_1635925462309.PNG"
           />
-                   <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc..."
+          <PostPreview
+            content="Lorem ipsum dolor sit amet..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="Lorem ipsum dolor sit amet"
           />
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc Phát hiện chú chó màu cam mắt đang liếc Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis imperdiet egestas..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="Lorem ipsum dolor sit amet"
           />
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="consectetur adipiscing elit dolor sit amet"
             previewImg="https://www.liveabout.com/thmb/Mic8lTNtkinmYKp9F4AQ5ArxQH0=/478x478/smart/filters:no_upscale()/dog-mem-wink-571fa6d55f9b58857d2751bb.jpg"
           />
           <PostPreview
-            content="Phát hiện chú chó màu cam mắt đang liếc..."
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
             tags={["#Tag1", "#Tag2"]}
-            title="Phát hiện chú chó mắt liếc"
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             previewImg="https://images.hindustantimes.com/img/2021/11/03/550x309/Doge_meme_dog_birthday_1635925455510_1635925462309.PNG"
           />
         </Masonry>
       </div>
       <div className="right-section">
-          <HotPost/>
+        <HotPost />
       </div>
     </div>
   );
