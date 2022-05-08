@@ -1,8 +1,10 @@
 import { HotPost, PostPreview } from "./components";
 import Masonry from "@mui/lab/Masonry";
 import "./index.scss";
+import { CommingSoon } from "../../components";
 
 export const BlogPage = () => {
+  return <CommingSoon/>
   return (
     <div className="blog-page">
       <div className="left-section">
