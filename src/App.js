@@ -15,6 +15,7 @@ import { useWindowSize } from "./hooks";
 
 function App() {
   const {width} = useWindowSize();
+  if (width < 1400) return <CommingSoon customMessage='UI for screen has width < 1400px is updating...'/>
   return (
     <BrowserRouter>
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
