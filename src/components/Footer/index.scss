@@ -1,4 +1,4 @@
-@import '../../styles/common.scss';
+@import '@styles/common.scss';
 
 footer {
   display: flex;
@@ -35,6 +35,9 @@ footer {
     }
   }
   .copyright {
-    font-size: 0.9rem;
+    font-size: 0.9rem; 
+    .version {
+      margin-left: 0.5rem;
+    }
   }
 }

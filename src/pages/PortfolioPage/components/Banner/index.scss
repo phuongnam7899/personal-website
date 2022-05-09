@@ -1,93 +1,98 @@
-@import "../../../../styles/common.scss";
-
+@import "@styles/common.scss";
 
 .portfolio-banner {
-    height: calc(100vh - 4rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3 {
-      margin: 1rem 0rem;
-    }
-    .avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin-bottom: 2rem;
-      object-fit: cover;
-    }
-    .btns-container {
-      margin-top: 1rem;
-      .btn {
-        border-radius: 2px;
-        padding: 0.5rem 1rem;
-        border: 1px solid #fff;
-        margin: 0 0.5rem;
-        color: #fff;
-        cursor: pointer;
-        transition: all 0.1s ease-in-out;
-        border-radius: 4px;
-        font-size: 1.1rem;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  .text {
+    text-align: center;
+  }
+  h3 {
+    margin: 1rem 0rem;
+  }
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+  }
+  .btns-container {
+    margin-top: 1rem;
+    .btn {
+      border-radius: 2px;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fff;
+      margin: 0 0.5rem;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      @include mobile {
+        font-size: 0.9rem;
+      }
+      &:hover {
+        background-color: #fff;
+      }
+      &.view-cv-btn {
+        background-color: #0c7489;
         &:hover {
           background-color: #fff;
+          color: #0c7489;
+          border: 1px solid #0c7489;
         }
-        &.view-cv-btn {
-          background-color: #0c7489;
-          &:hover {
-            background-color: #fff;
-            color: #0c7489;
-            border: 1px solid #0c7489;
+      }
+      &.view-prj-btn {
+        background-color: #00bd9d;
+        &:hover {
+          background-color: #fff;
+          color: #00bd9d;
+          border: 1px solid #00bd9d;
+        }
+      }
+    }
+  }
+  .cv {
+    position: fixed;
+    width: 60vw;
+    height: 90vh;
+    top: 5vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 0 4px $box-shadow-light;
+    .rpv-core__text-layer {
+      display: none;
+    }
+    .actions {
+      position: fixed;
+      right: -1rem;
+      top: 0.5rem;
+      transform: translateX(-50%);
+      button {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        background-color: $lightest-grey;
+        &:hover {
+          .fa-times {
+            color: $ultra-red;
           }
-        }
-        &.view-prj-btn {
-          background-color: #00bd9d;
-          &:hover {
-            background-color: #fff;
-            color: #00bd9d;
-            border: 1px solid #00bd9d;
+          .fa-download {
+            color: $primary-color;
           }
         }
       }
     }
-    .cv {
-        position: fixed;
-        width: 60vw;
-        height: 90vh;
-        top: 5vh;
-        left: 50vw;
-        transform: translateX(-50%);
-        background-color: #fff;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 9999;
-        box-shadow: 0 0 4px $box-shadow-light;
-        .rpv-core__text-layer {
-          display: none;
-        }
-        .actions {
-          position: fixed;
-          right: -1rem;
-          top: 0.5rem;
-          transform: translateX(-50%);
-          button {
-            width: 1.75rem;
-            height: 1.75rem;
-            margin-left: 0.5rem;
-            cursor: pointer;
-            background-color: $lightest-grey;
-            &:hover {
-                .fa-times {
-                    color: $ultra-red;
-                }
-                .fa-download {
-                    color: $primary-color;
-                }
-            }
-          }
-        }
-      }
   }
+}

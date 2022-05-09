@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useMousePositionInElement } from "../../../../hooks";
+import { useMousePositionInElement } from "@hooks";
 import "./index.scss";
 
 export const DoubleImageReveal = ({ imgTop, imgBack, width, height }) => {
