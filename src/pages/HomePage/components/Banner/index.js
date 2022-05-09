@@ -1,4 +1,4 @@
-import { CtaButton } from "../../../../components";
+import { CtaButton } from "@components";
 import { DoubleImageReveal } from "../DoubleImageReveal";
 import img1 from "./image-1.jpg";
 import img2 from "./image-2.jpg";

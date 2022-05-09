@@ -1,10 +1,20 @@
+@import '@styles/common.scss';
+
 .blog-page {
     padding: 5rem 3rem;
     display: flex;
     .left-section {
-        width: 66.6%;
+        width: 100%;
+
+        @include desktop {
+            width: 66.6%;
+        }
     }
     .right-section {
-        flex-grow: 33.3%;
+        width: 33.3%;
+        display: none;
+        @include desktop {
+            display: block;
+        }
     }
 }

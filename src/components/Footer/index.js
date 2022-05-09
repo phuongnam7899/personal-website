@@ -14,7 +14,7 @@ export const Footer = () => {
         <i className="fab fa-instagram-square"></i>
         </a>
       </div>
-      <div className='copyright'><i className="far fa-copyright"></i> 2022 nklm</div>
+      <div className='copyright'><i className="far fa-copyright"></i> 2022 nklm <span className='version'>v1.0.0</span></div>
     </footer>
   );
 };

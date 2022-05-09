@@ -3,7 +3,7 @@ import cv from "./CV.pdf";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import './index.scss'
-import { Dialog } from "../../../../components";
+import { Dialog } from "@components";
 
 export const Banner = () => {
   const [showCV, setShowCV] = useState(false);
@@ -38,13 +38,13 @@ export const Banner = () => {
         className="avatar"
         src="https://i.pinimg.com/564x/7e/3f/4c/7e3f4c60496ce171c102fd2bea7013ce--so-funny-funny-shit.jpg"
       />
-      <div>Hi, i'm Nam</div>
-      <h3>I want to design clean & usable products</h3>
-      <div>
+      <div className="text">Hi, i'm Nam</div>
+      <h3 className="text">I want to design clean & usable products</h3>
+      <div className="text">
         1.5-year experience in web development, 1 in UI/UX designing and Product
         Owning,
       </div>
-      <div>more and can be more...</div>
+      <div className="text">more and can be more...</div>
       <div className="btns-container">
         <a
           onClick={() => {

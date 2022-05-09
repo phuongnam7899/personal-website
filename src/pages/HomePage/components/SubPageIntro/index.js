@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FlipCard, FlipCardBack, FlipCardFront } from "../../../../components";
+import { FlipCard, FlipCardBack, FlipCardFront } from "@components";
 import "./index.scss";
 
 export const SubPageIntro = () => {

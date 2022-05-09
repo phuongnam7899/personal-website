@@ -1,4 +1,4 @@
-import { Chip, Dialog } from "../../../../../../components";
+import { Chip, Dialog } from "@components";
 import _ from "lodash";
 import "./index.scss";
 

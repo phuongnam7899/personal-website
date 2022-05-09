@@ -1,4 +1,4 @@
-import { Chip } from "../../../../../../components";
+import { Chip } from "@components";
 import './index.scss';
 
 export const ProjectItem = ({ project, setSelectedProject }) => {

@@ -1,6 +1,6 @@
 import { NavBar } from "..";
 import { Footer } from "..";
-import { useScrollTopOnChangeRoute } from "../../hooks";
+import { useScrollTopOnChangeRoute } from "@hooks";
 
 export const MainLayout = ({ children }) => {
   useScrollTopOnChangeRoute();

@@ -1,4 +1,4 @@
-@import '../../../../../../styles/common.scss';
+@import '@styles/common.scss';
 
 .project-item {
     display: flex;
@@ -21,6 +21,10 @@
       padding: 2rem 2rem;
       display: flex;
       flex-direction: column;
+      @include tablet {
+      padding: 1rem 1rem;
+
+      }
       .prj-name {
         margin-bottom: 1rem;
       }
