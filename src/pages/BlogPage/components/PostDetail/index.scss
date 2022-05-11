@@ -1,0 +1,13 @@
+@import '@styles/common.scss';
+
+.post-detail {
+    .page {
+        height: calc(100vh - 12rem);
+        border-radius: 8px;
+    }
+    .pages {
+        width: 95%;
+        box-shadow: 0 0 4px $box-shadow-light;
+
+    }
+}
