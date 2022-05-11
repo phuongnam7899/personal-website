@@ -1,9 +1,11 @@
 import { Chip } from "@components";
+import { Link } from "react-router-dom";
 import "./index.scss";
 
-export const PostPreview = ({ previewImg, tags, title, content }) => {
+export const PostPreview = ({post}) => {
+  const { previewImg, tags, title, intro, slug } = post;
   return (
-    <div className="post-preview">
+    <Link to={`/blog/${slug}`} className="post-preview">
       {previewImg && <img src={previewImg} />}
       <div className="content">
         <div className="tags">
@@ -12,8 +14,8 @@ export const PostPreview = ({ previewImg, tags, title, content }) => {
           })}
         </div>
         <div className="post-title">{title}</div>
-        <div className="post-description">{content}</div>
+        <div className="post-description">{intro}</div>
       </div>
-    </div>
+    </Link>
   );
 };
