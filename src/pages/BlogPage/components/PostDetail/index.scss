@@ -1,12 +1,71 @@
 @import '@styles/common.scss';
 
 .post-detail {
-    .page {
-        height: calc(100vh - 12rem);
+    padding: 0 2rem;
+    padding-right: 8rem;
+    .post-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .post-title {
+            font-size: 1.75rem;
+        }
+        .view-mode {
+            display: flex;
+            align-items: center;
+            .desc {
+                font-size: 0.9rem;
+            }
+            .toggle {
+                margin-left: 0.5rem;
+                display: flex;
+                outline: 1px solid $box-shadow-light;
+                border-radius: 1rem;
+                height: 1.5rem;
+                overflow: hidden;
+                span {
+                    display: flex;
+                    height: 100%;
+                    width: 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 0.1s ease-in-out;
+                    i {
+                        color:  $primary-color;
+                        font-size: 0.75rem;
+                    }
+                    &:first-child {
+                        border-right: 1px solid $box-shadow-light;
+                    }
+                    &:hover {
+                        background-color: $lightest-grey;
+                    }
+                    &.active {
+                        background-color: $primary-color;
+                        i {
+                            color: #fff;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card-page {
+        height: calc(100vh - 15rem);
         border-radius: 8px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20%;
+        text-align: center;
+    }
+    .line-page {
     }
     .pages {
-        width: 95%;
         box-shadow: 0 0 4px $box-shadow-light;
 
     }

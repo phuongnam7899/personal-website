@@ -3,6 +3,7 @@
 .blog-page {
     padding: 3rem;
     display: flex;
+    min-height: calc(100vh - 13.75rem);
     .left-section {
         width: 100%;
 

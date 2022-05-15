@@ -1,0 +1,17 @@
+@import '@styles/common.scss';
+
+.squiggly-page {
+    margin-top: 2rem;
+    min-height: calc(100vh - 64px - 170px);
+    padding: 0 1rem;
+    .picture {
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+    .selected-img{
+        height: 90vh;
+    }
+}

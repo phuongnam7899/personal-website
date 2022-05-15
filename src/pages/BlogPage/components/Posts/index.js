@@ -1,5 +1,5 @@
 import { Masonry } from "@mui/lab";
-import { posts } from "../../data";
+import { posts } from "../../data/posts";
 import { PostPreview } from "../PostPreview";
 
 export const Posts = () => {
