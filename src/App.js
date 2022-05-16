@@ -17,7 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const {width} = useWindowSize()
-  if (width < 425) return <CommingSoon customMessage='Mobile UI is updating...'/>
+  if (width <= 425) return <CommingSoon customMessage='Mobile UI is updating...'/>
   return (
     <BrowserRouter>
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
