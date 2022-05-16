@@ -11,13 +11,13 @@ import {
 } from "./pages";
 import { Worker } from "@react-pdf-viewer/core";
 import "./App.scss";
-import { useBreakout } from "./hooks";
+import { useBreakout, useWindowSize } from "./hooks";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  const screenType = useBreakout();
-  if (screenType === 'mobile') return <CommingSoon customMessage='Mobile UI is updating...'/>
+  const {width} = useWindowSize()
+  if (width < 425) return <CommingSoon customMessage='Mobile UI is updating...'/>
   return (
     <BrowserRouter>
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
