@@ -3,5 +3,5 @@ import reactFolderStructure from "./react-folder-structure";
 
 export const posts = [
   releaseNoteV100,
-  // reactFolderStructure,
+  reactFolderStructure,
 ];

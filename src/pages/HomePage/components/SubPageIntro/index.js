@@ -53,14 +53,6 @@ export const SubPageIntro = () => {
           </Link>
         </FlipCardBack>
       </FlipCard>
-      {/* <Link to="/blog" className="sub-page-intro-item">
-        
-        <div className="intro">See what I found in my blog</div>
-      </Link>
-      <Link to="/playground" className="sub-page-intro-item">
-        <i class="far fa-laugh-squint big-icon"></i>
-        <div className="intro">Let's go to playground!</div>
-      </Link> */}
     </div>
   );
 };

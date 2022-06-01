@@ -5,4 +5,5 @@ export * from './CtaButton'
 export * from './FlipCard'
 export * from './Chip'
 export * from './CommingSoon';
-export * from './Dialog'
+export * from './Dialog';
+export * from './IconWithTooltip';

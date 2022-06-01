@@ -3,6 +3,9 @@
 
 .hot-posts-section {
     padding-left: 1rem;
+    position: sticky;
+    right: 0;
+    top: 50px;
     .section-title {
         font-size: 1.5rem;
         margin-bottom: 2rem;

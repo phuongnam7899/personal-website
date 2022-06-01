@@ -1,0 +1,9 @@
+@import '@styles/common.scss';
+
+.blog-note {
+    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+    i {
+        color: $error
+    }
+}

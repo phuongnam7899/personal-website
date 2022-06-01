@@ -1,0 +1,9 @@
+@import '@styles/common.scss';
+
+.text-code-container {
+    border: 1px solid $box-shadow-dark;
+    border-left: 8px solid $primary-color;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 2px;
+}

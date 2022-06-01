@@ -1,9 +1,9 @@
 import { P, SectionTitle } from "../../../components/PostDetail/components";
 
 export default {
-  intro: "What's up in the first version of nklm?",
+  intro: {en: "What's up in the first version of nklm?", vi: 'Có gì trong phiên bản đầu tiên của nklm'},
   tags: ["#release-notes"],
-  title: "Release notes v1.0.0",
+  title: {en: "Release notes v1.0.0", vi: "Nội dung cập nhật bản 1.0.0"},
   slug: "release-notes-v-1-0-0",
   pages: [
     <>

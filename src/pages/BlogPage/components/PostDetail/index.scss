@@ -7,9 +7,10 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         .post-title {
             font-size: 1.75rem;
+            max-width: 90%;
         }
         .view-mode {
             display: flex;
@@ -60,10 +61,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 20%;
-        text-align: center;
+        padding: 0 10%;
     }
     .line-page {
+        margin-bottom: 2rem;
     }
     .pages {
         box-shadow: 0 0 4px $box-shadow-light;

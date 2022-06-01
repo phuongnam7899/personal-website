@@ -3,7 +3,8 @@ import { posts } from "../../data/posts";
 import "./index.scss";
 
 const hotPostSlugs = [
-  'release-notes-v-1-0-0'
+  'release-notes-v-1-0-0',
+  'react-folder-structure-for-small-medium-projects'
 ];
 
 const hotPosts = posts.filter((post) => hotPostSlugs.includes(post.slug));
@@ -29,7 +30,7 @@ const HotPostPreview = ({ number, title, slug }) => {
     <div className="hot-post-preview">
       <div className="number">{number}</div>
       <div className="content">
-        <div className="title">{title}</div>
+        <div className="title">{title.vi}</div>
       </div>
     </div>
     </Link>
