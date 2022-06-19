@@ -31,7 +31,6 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-          
         </MainLayout>
       </Worker>
     </BrowserRouter>

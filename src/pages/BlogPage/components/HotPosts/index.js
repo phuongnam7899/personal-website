@@ -3,8 +3,9 @@ import { posts } from "../../data/posts";
 import "./index.scss";
 
 const hotPostSlugs = [
+  'react-folder-structure-for-small-medium-projects',
+  'how-to-shorten-import-url',
   'release-notes-v-1-0-0',
-  'react-folder-structure-for-small-medium-projects'
 ];
 
 const hotPosts = posts.filter((post) => hotPostSlugs.includes(post.slug));

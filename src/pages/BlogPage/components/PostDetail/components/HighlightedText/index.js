@@ -1,7 +1,7 @@
 const highlightColors = {
     primary: {
         dark: '#0C7489',
-        light: '#FBF719'
+        light: '#fffdb8'
     },
     error: {
         dark: '#FF6978',

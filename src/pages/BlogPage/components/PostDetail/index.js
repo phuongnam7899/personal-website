@@ -5,7 +5,6 @@ import { posts } from "../../data/posts";
 import { useLocalStorage } from "@hooks";
 import "./index.scss";
 import { IconWithTooltip } from "../../../../components";
-import { P } from "./components";
 
 export const PostDetail = () => {
   const [viewMode, setViewMode] = useLocalStorage("postViewMode", "line");
@@ -41,13 +40,18 @@ export const PostDetail = () => {
   const displayedPages = useMemo(() => {
     return [
       ...post.pagesVi,
-      viewMode === 'card' ? <>
-        <span>Hết.</span>
-        <span>
-          {" "}
-          Bấm <i class="fas fa-long-arrow-alt-right"></i> để quay lại trang đầu
-        </span>
-      </> : <></>,
+      viewMode === "card" ? (
+        <>
+          <span>Hết.</span>
+          <span>
+            {" "}
+            Bấm <i class="fas fa-long-arrow-alt-right"></i> để quay lại trang
+            đầu
+          </span>
+        </>
+      ) : (
+        <></>
+      ),
     ];
   }, [viewMode, post.pagesVi]);
 
@@ -58,20 +62,38 @@ export const PostDetail = () => {
         <div className="view-mode">
           <div className="toggle">
             <span
-              className={viewMode === "line" ? "active" : ""}
               onClick={() => {
                 setViewMode("line");
               }}
+              className={viewMode === "line" ? "active" : ""}
             >
-              <i class="fas fa-align-left"></i>
+              <IconWithTooltip
+                tooltipContent={
+                  viewMode === "card"
+                    ? "Use arrow keys (← / →) to change page"
+                    : "Read up to down like other pages"
+                }
+              >
+                <i class="fas fa-align-left"></i>
+              </IconWithTooltip>
             </span>
+
             <span
               className={viewMode === "card" ? "active" : ""}
               onClick={() => {
                 setViewMode("card");
               }}
             >
-              <i class="far fa-square"></i>
+              <IconWithTooltip
+                tooltipContent={
+                  viewMode === "card"
+                    ? "Use arrow keys (← / →) to change page"
+                    : "Read up to down like other pages"
+                }
+              >
+                <i class="far fa-square"></i>
+              </IconWithTooltip>
+              
             </span>
           </div>
           <IconWithTooltip
