@@ -11,12 +11,14 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { IconWithTooltip } from "../../../../../components";
 
+
 export default {
   intro: {en: "Pages, components, helper, etc...", vi: "Pages, components, helper, v.v..."},
   tags: ["#coding", "#reactjs"],
   title: {en: "Folder structure for small medium/small ReactJS projects", vi: "Cấu trúc thư mục cho các dự án ReactJS nhỏ và vừa nhỏ"},
   slug: "react-folder-structure-for-small-medium-projects",
   pagesEng: [],
+  previewImg: 'https://miro.medium.com/max/1400/1*gWsd2r4vlAGMfQtQteYpHg.png',
   pagesVi: [
     <>
       <P>

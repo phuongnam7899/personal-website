@@ -1,15 +1,20 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
 import { posts } from "../../data/posts";
 import { useLocalStorage } from "@hooks";
 import "./index.scss";
-import { IconWithTooltip } from "../../../../components";
+import { IconWithTooltip, Loading } from "../../../../components";
+import { FirestoreArticle } from "../../../../apis/articles";
+import { CommentsSection } from "./components";
 
 export const PostDetail = () => {
   const [viewMode, setViewMode] = useLocalStorage("postViewMode", "line");
   const sliderRef = useRef(null);
   const { slug } = useParams();
+  const [loading, setLoading] = useState(false);
+  const [firebaseArticle, setFirebaseArticle] = useState(new FirestoreArticle({ slug }))
+  
   const post = useMemo(() => {
     return posts.filter((post) => post.slug === slug)[0];
   }, [slug]);
@@ -36,6 +41,18 @@ export const PostDetail = () => {
       document.removeEventListener("keyup", handleKeyUp);
     };
   }, []);
+
+  useEffect(() => {
+    setLoading(true);
+    firebaseArticle.updateLastestFromDbBySlug().then(() => {
+      setLoading(false)
+      setFirebaseArticle(firebaseArticle);
+    });
+  }, [slug])
+
+  const handleAddComment = (commentContent) => {
+    firebaseArticle.addComment(commentContent);
+  }
 
   const displayedPages = useMemo(() => {
     return [
@@ -125,6 +142,11 @@ export const PostDetail = () => {
           })}
         </div>
       )}
+      <div>
+        {
+          loading ? <Loading/> : <CommentsSection comments={firebaseArticle.comments} addComment={handleAddComment}/>
+        }
+      </div>
     </div>
   );
 };

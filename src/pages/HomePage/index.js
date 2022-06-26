@@ -1,4 +1,4 @@
-import { CommingSoon } from "../../components";
+import { CommingSoon } from "@components";
 import { useBreakout } from "../../hooks";
 import { Banner, SubPageIntro } from "./components";
 

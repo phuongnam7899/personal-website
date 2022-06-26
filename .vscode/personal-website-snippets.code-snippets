@@ -19,14 +19,16 @@
     "scope": "javascript",
     "prefix": "blp",
     "body": [
-      "import { P, SectionTitle } from ''../../../components/PostDetail/components';",
-      "export default {",
-      "intro: '$1',",
+      "import { P, SectionTitle } from '../../../components/PostDetail/components';",
+      "import { Post } from '@classes';",
+      "export default new Post({",
+      "intro: {en: '', vi:'$1'},",
       "tags: ['#$2'],",
-      "title: '$3',",
+      "title: {en: '', vi:'$3'},",
       "slug: '$4',",
-      "pages: [],",
-      "};"
+      "pagesEn: [],",
+      "pagesVi: [],",
+      "});"
     ]
   },
   "Export component": {

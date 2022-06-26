@@ -14,6 +14,5 @@ export const HighlightedText = (props) => {
   const highlightStyle = {};
   if ( highlightTarget === "text") highlightStyle.color = highlightColors[highlightColor].dark;
   if ( highlightTarget === "bg") highlightStyle.backgroundColor =  highlightColors[highlightColor].light;
-  console.log(highlightStyle);
   return <span style={highlightStyle}>{children}</span>;
 };

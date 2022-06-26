@@ -11,6 +11,7 @@ export default {
     en: "How to shorten import url in React projects",
     vi: "Rút gọn link khi import trong dự án ReactJS",
   },
+  previewImg: 'https://lh3.googleusercontent.com/pw/AM-JKLXXT_1lNMBwcte7-S0OxDt3fdF1cRjXayOsn2QcXerfFtuCbo0PaMazgjNS1Z9CLmDmdN8WpL81aP6AKdB2J0Im7RxLesQSlhM6xo0205-uyH_uw1PaxBRVCcSR53GWPY-wXHgzO05bqWeMqMa-snMWzA=w803-h150-no?authuser=0',
   slug: "how-to-shorten-import-url",
   pageEn: [],
   pagesVi: [

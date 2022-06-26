@@ -7,3 +7,4 @@ export * from './Chip'
 export * from './CommingSoon';
 export * from './Dialog';
 export * from './IconWithTooltip';
+export * from './Loading';

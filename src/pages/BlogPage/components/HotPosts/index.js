@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
-import { posts } from "../../data/posts";
+import { hotPosts } from "../../data/posts";
 import "./index.scss";
 
-const hotPostSlugs = [
-  'react-folder-structure-for-small-medium-projects',
-  'how-to-shorten-import-url',
-  'release-notes-v-1-0-0',
-];
-
-const hotPosts = posts.filter((post) => hotPostSlugs.includes(post.slug));
 
 export const HotPost = () => {
   return (
