@@ -11,7 +11,7 @@ export default {
   pagesVi: [
     <>
       <P>
-        Ê,bây giờ có 1 cái ô tô và 1 cái xe máy xe máy chạy đua với nhau thì bên
+        Ê, bây giờ có 1 cái ô tô và 1 cái xe máy xe máy chạy đua với nhau thì bên
         nào thắng?
       </P>
       <P>
@@ -48,14 +48,14 @@ export default {
       </P>
       <P>
         <b>
-          Wait 30s... t vừa search{" "}
+          Wait... t vừa search{" "}
           <a
             href="https://www.autoexpress.co.uk/best-cars/85932/what-fastest-car-world"
             target={"_blank"}
           >
             ô tô nhanh nhất
           </a>{" "}
-          bây h là hơn 500km/h, không hơn nhiều nhưng vẫn đủ win xe mày kia á
+          bây h là hơn 500km/h, không hơn nhiều nhưng vẫn thừa sức win xe mày kia á
         </b>
       </P>
     </>,
@@ -97,10 +97,10 @@ export default {
     <>
       <P>Tóm lại:</P>
       <P>
-        - <HighlightedText>Context</HighlightedText> là rất quan trong trong việc trả lời hay đưa ra quyết định,
+        - <HighlightedText>Context</HighlightedText> là rất quan trong trong việc trả lời hay đưa ra quyết định, nên
         giảm tối thiểu assumption
       </P>
-      <P>- <HighlightedText>Chọn sân chơi</HighlightedText> mà mình có thể phát huy hết khả năng</P>
+      <P>- Hãy <HighlightedText>chọn sân chơi</HighlightedText> mà mình có thể phát huy hết khả năng</P>
       <P>
         - Dù máy móc có đỉnh thế nào thì <HighlightedText>con người vẫn là trung tâm</HighlightedText> (Có thể phản
         biện trong câu truyện trên là nhỡ ông lái ngủ quên nhưng xe do AI lái
