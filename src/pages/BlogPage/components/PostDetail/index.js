@@ -44,6 +44,7 @@ export const PostDetail = () => {
 
   useEffect(() => {
     setLoading(true);
+    sliderRef.current.slickGoTo(0)
     firebaseArticle.updateLastestFromDbBySlug().then(() => {
       setLoading(false)
       setFirebaseArticle(firebaseArticle);
