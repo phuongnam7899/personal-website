@@ -3,7 +3,7 @@ import {
   P,
   CodeBlock,
 } from "../../../components/PostDetail/components";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 export default {
   intro: 'Giảm tối thiểu lượng "../../../" xuất hiện trong code của dự án',
   tags: ["#coding", "#react"],
@@ -11,7 +11,8 @@ export default {
     en: "How to shorten import url in React projects",
     vi: "Rút gọn link khi import trong dự án ReactJS",
   },
-  previewImg: 'https://lh3.googleusercontent.com/pw/AM-JKLXXT_1lNMBwcte7-S0OxDt3fdF1cRjXayOsn2QcXerfFtuCbo0PaMazgjNS1Z9CLmDmdN8WpL81aP6AKdB2J0Im7RxLesQSlhM6xo0205-uyH_uw1PaxBRVCcSR53GWPY-wXHgzO05bqWeMqMa-snMWzA=w803-h150-no?authuser=0',
+  previewImg:
+    "https://lh3.googleusercontent.com/pw/AM-JKLXXT_1lNMBwcte7-S0OxDt3fdF1cRjXayOsn2QcXerfFtuCbo0PaMazgjNS1Z9CLmDmdN8WpL81aP6AKdB2J0Im7RxLesQSlhM6xo0205-uyH_uw1PaxBRVCcSR53GWPY-wXHgzO05bqWeMqMa-snMWzA=w803-h150-no?authuser=0",
   slug: "how-to-shorten-import-url",
   pageEn: [],
   pagesVi: [
@@ -40,7 +41,11 @@ export default {
         <HighlightedText>Button/Button.js</HighlightedText>, thay vì để tên file
         là <HighlightedText>Button.js</HighlightedText> thì nên để là{" "}
         <HighlightedText>index.js</HighlightedText>, à mà cái này tui nhớ đã nói
-        trong lần nói về <Link to={'/blog/react-folder-structure-for-small-medium-projects'}>folder structure</Link> rồi mà nhỉ, có gì xem lại cho rõ nhé
+        trong lần nói về{" "}
+        <Link to={"/blog/react-folder-structure-for-small-medium-projects"}>
+          folder structure
+        </Link>{" "}
+        rồi mà nhỉ, có gì xem lại cho rõ nhé
       </P>
     </>,
     <>
@@ -139,6 +144,27 @@ import * from "./Table"`}
         />
         <P>Thì đến lúc import chỉ cần thế này là được:</P>
         <CodeBlock text={'import { Button, Form, Table } from "@components"'} />
+      </P>
+    </>,
+    <>
+      <P>
+        Về cơ bản như vậy là code chạy sẽ không lỗi rồi, nhưng mà mà để IDE là VSCode có thể hiện và
+        đưa ra suggestion đúng thì ô cần config thêm bằng cách tạo file{" "}
+        <HighlightedText>jsconfig.json</HighlightedText> thế này:
+      </P>
+      <P>
+
+      <CodeBlock
+        language="json"
+        text={`{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@components": ["src/components"],
+      }
+    }
+  }`}
+      />
       </P>
     </>,
     <>

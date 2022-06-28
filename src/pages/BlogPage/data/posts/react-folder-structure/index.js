@@ -71,7 +71,7 @@ export default {
           ... Nhìn qua thì tui cũng tự hình dung được vài phần, mà vẫn có mấy
           cái cần hỏi lại, đầu tiên là ngay ngoài có 2 file tui chưa thấy bao
           giờ là <HighlightedText>craco.config</HighlightedText> và{" "}
-          <HighlightedText>path.json</HighlightedText>, nó để làm gì thế
+          <HighlightedText>jsconfig.json</HighlightedText>, nó để làm gì thế
         </b>
       </P>
       <P>
