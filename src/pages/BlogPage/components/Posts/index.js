@@ -27,6 +27,7 @@ export const Posts = () => {
   const screenType = useBreakout();
   return (
     <>
+    <div className="blog-note"><i class="fas fa-flag"></i> Note: Cause my blog's target audience now is only Vietnamese, all posts are in Vietnamese only</div>
       <Masonry {...mansonrySettingByScreenType[screenType]}>
         {posts.map((post) => {
           return <PostPreview post={post} />;
