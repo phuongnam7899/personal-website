@@ -4,3 +4,4 @@ export * from "./HighlightedText";
 export * from "./TextCode";
 export * from "./CodeBlock";
 export * from './CommentsSection';
+export * from './Image';

@@ -157,7 +157,6 @@ export const PostDetail = () => {
           )}
         </div>
       </div>
-      <div className="right-section"><HotPost/></div>
     </div>
   );
 };

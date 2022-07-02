@@ -4,8 +4,10 @@ import howToShortenImportUrl from "./how-to-shorten-import-url";
 import itDepends from "./it-depends";
 import thoughtAboutModest from "./thought-about-modest";
 import releaseNoteV110 from "./release-note-v-1-1-0";
+import fishBoneDiagram from "./fish-bone-diagram";
 
 export const posts = [
+  fishBoneDiagram,
   thoughtAboutModest,
   releaseNoteV110,
   itDepends,
@@ -14,11 +16,10 @@ export const posts = [
   releaseNoteV100
 ];
 export const hotPosts = [
+  fishBoneDiagram,
   thoughtAboutModest,
-  releaseNoteV110,
   reactFolderStructure,
   howToShortenImportUrl,
   itDepends,
-  releaseNoteV100
 ];
 
