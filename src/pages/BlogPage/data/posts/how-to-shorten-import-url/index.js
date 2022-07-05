@@ -19,8 +19,8 @@ export default {
     <>
       <P>
         <b>
-          Ê hôm trước bảo nói về cách rút gọn link khi import mà mãi chưa nói
-          vậy.-. Giờ tui thường xuyên phải import theo kiểu{" "}
+          nlm: Ê hôm trước bảo nói về cách rút gọn link khi import mà mãi chưa
+          nói vậy.-. Giờ tui thường xuyên phải import theo kiểu{" "}
           <HighlightedText>
             ../../../../components/Button/Button.js
           </HighlightedText>
@@ -28,16 +28,16 @@ export default {
         </b>
       </P>
       <P>
-        Oke, để giải quyết cái đống bùi nhùi kia thì có 2 cái cần nói, muốn nghe
-        cái ngắn hay cái dài trước?
+        nklm: Oke, để giải quyết cái đống bùi nhùi kia thì có 2 cái cần nói,
+        muốn nghe cái ngắn hay cái dài trước?
       </P>
     </>,
     <>
       <P>
-        <b>Cái nào dễ làm trước đê</b>
+        <b>nlm: Cái nào dễ làm trước đê</b>
       </P>
       <P>
-        Đầu tiên là cần xử lý cái đoạn{" "}
+        nklm: Đầu tiên là cần xử lý cái đoạn{" "}
         <HighlightedText>Button/Button.js</HighlightedText>, thay vì để tên file
         là <HighlightedText>Button.js</HighlightedText> thì nên để là{" "}
         <HighlightedText>index.js</HighlightedText>, à mà cái này tui nhớ đã nói
@@ -51,23 +51,23 @@ export default {
     <>
       <P>
         <b>
-          ... À ờ nhỉ, nhờ rùi, ok thế cái đống{" "}
+          nlm: ... À ờ nhỉ, nhờ rùi, ok thế cái đống{" "}
           <HighlightedText>../../../../</HighlightedText>
         </b>{" "}
         giờ àm sao, nó mới là cái dài nhất á
       </P>
       <P>
-        Để giải quyết cái đó thì cần config thêm webpack alias, nên ô cần cài
-        craco bằng lệnh{" "}
+        nklm: Để giải quyết cái đó thì cần config thêm webpack alias, nên ô cần
+        cài craco bằng lệnh{" "}
         <HighlightedText>npm install @craco/craco</HighlightedText> trước nhé
       </P>
     </>,
     <>
       <P>
-        <b>craco là gì thế?</b>
+        <b>nlm: craco là gì thế?</b>
       </P>
       <P>
-        Nó là 1 package thôi, craco là viết tắt của{" "}
+        nklm: Nó là 1 package thôi, craco là viết tắt của{" "}
         <HighlightedText>
           Create React App Configuration Override
         </HighlightedText>
@@ -76,11 +76,13 @@ export default {
     </>,
     <>
       <P>
-        <b>Hmm, là để override config huh? Ok, thế cài xong rồi làm gì nữa?</b>
+        <b>
+          nlm: Hmm, là để override config huh? Ok, thế cài xong rồi làm gì nữa?
+        </b>
       </P>
       <P>
         <P>
-          Cài xong rồi thì tạo thêm 1 file{" "}
+          nklm: Cài xong rồi thì tạo thêm 1 file{" "}
           <HighlightedText>craco.config.js</HighlightedText> với nội dung thế
           này:
         </P>
@@ -100,7 +102,7 @@ module.exports = {
     <>
       <P>
         <P>
-          Sau đó ô cần quay qua file{" "}
+          nklm: Sau đó ô cần quay qua file{" "}
           <HighlightedText>packages.json</HighlightedText> update lại 3 scripts
           như thế này:
         </P>
@@ -119,12 +121,12 @@ module.exports = {
     </>,
     <>
       <P>
-        <b>Thế là được luôn huh?</b>
+        <b>nlm: Thế là được luôn huh?</b>
       </P>
       <P>
         <P>
-          Uhm, giờ khi cần import cái Button như ở ô bảo vừa nãy chỉ cần import
-          như này
+          nklm: Uhm, giờ khi cần import cái Button như ở ô bảo vừa nãy chỉ cần
+          import như này
         </P>
         <CodeBlock
           text='import { Button } from "@components/Button"'
@@ -132,7 +134,7 @@ module.exports = {
           language="js"
         />
         <P>
-          Hay muốn gọn hơn nữa thì trong folder{" "}
+          nklm: Hay muốn gọn hơn nữa thì trong folder{" "}
           <HighlightedText>components</HighlightedText> ô tạo thêm 1 file{" "}
           <HighlightedText>index.js</HighlightedText>, sau đó import tất cả các
           thằng con vào như thế này:
@@ -142,21 +144,21 @@ module.exports = {
 import * from "./Form"
 import * from "./Table"`}
         />
-        <P>Thì đến lúc import chỉ cần thế này là được:</P>
+        <P>nklm: Thì đến lúc import chỉ cần thế này là được:</P>
         <CodeBlock text={'import { Button, Form, Table } from "@components"'} />
       </P>
     </>,
     <>
       <P>
-        Về cơ bản như vậy là code chạy sẽ không lỗi rồi, nhưng mà mà để IDE là VSCode có thể hiện và
-        đưa ra suggestion đúng thì ô cần config thêm bằng cách tạo file{" "}
-        <HighlightedText>jsconfig.json</HighlightedText> thế này:
+        nklm: Về cơ bản như vậy là code chạy sẽ không lỗi rồi, nhưng mà mà để
+        IDE là VSCode có thể hiện và đưa ra suggestion đúng thì ô cần config
+        thêm bằng cách tạo file <HighlightedText>jsconfig.json</HighlightedText>{" "}
+        thế này:
       </P>
       <P>
-
-      <CodeBlock
-        language="json"
-        text={`{
+        <CodeBlock
+          language="json"
+          text={`{
     "compilerOptions": {
       "baseUrl": ".",
       "paths": {
@@ -164,20 +166,20 @@ import * from "./Table"`}
       }
     }
   }`}
-      />
+        />
       </P>
     </>,
     <>
       <P>
         <b>
-          Uh huh, nhìn ổn hơn rồi đấy, như này nếu muốn rút gọn link import đến
-          các phần khác như <HighlightedText>helper</HighlightedText>,{" "}
+          nlm: Uh huh, nhìn ổn hơn rồi đấy, như này nếu muốn rút gọn link import
+          đến các phần khác như <HighlightedText>helper</HighlightedText>,{" "}
           <HighlightedText>hooks</HighlightedText> thì cũng tương tự nhỉ?
         </b>
       </P>
-      <P>Uhm, tui đang định nói thêm phần đó:v</P>
+      <P>nklm: Uhm, tui đang định nói thêm phần đó:v</P>
       <P>
-        <b>Okok, xincamon</b>
+        <b>nlm: Okok, xincamon</b>
       </P>
     </>,
   ],

@@ -1,61 +1,65 @@
 import {
   HighlightedText,
   P,
-  SectionTitle,
-  CodeBlock
+  CodeBlock,
 } from "../../../components/PostDetail/components";
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { IconWithTooltip } from "../../../../../components";
 
-
 export default {
-  intro: {en: "Pages, components, helper, etc...", vi: "Pages, components, helper, v.v..."},
+  intro: {
+    en: "Pages, components, helper, etc...",
+    vi: "Pages, components, helper, v.v...",
+  },
   tags: ["#coding", "#reactjs"],
-  title: {en: "Folder structure for small medium/small ReactJS projects", vi: "Cấu trúc thư mục cho các dự án ReactJS nhỏ và vừa nhỏ"},
+  title: {
+    en: "Folder structure for small medium/small ReactJS projects",
+    vi: "Cấu trúc thư mục cho các dự án ReactJS nhỏ và vừa nhỏ",
+  },
   slug: "react-folder-structure-for-small-medium-projects",
   pagesEng: [],
-  previewImg: 'https://miro.medium.com/max/1400/1*gWsd2r4vlAGMfQtQteYpHg.png',
+  previewImg: "https://miro.medium.com/max/1400/1*gWsd2r4vlAGMfQtQteYpHg.png",
   pagesVi: [
     <>
       <P>
         <b>
-          Ê tui đang học React trên mạng, mà thấy các tutorial có mấy cái
+          nlm: Ê tui đang học React trên mạng, mà thấy các tutorial có mấy cái
           structure code khác nhau lắm, nên theo cái nào thì tốt đc nhỉ?
         </b>
       </P>
       <P>
-        Uhm, bố React bố cho flexible lắm, thích để kiểu nào cũng được hết á,
-        không khắt khe như bố Angular
+        nklm: Uhm, bố React bố cho flexible lắm, thích để kiểu nào cũng được hết
+        á, không khắt khe như bố Angular
       </P>
     </>,
     <>
       <P>
-        <b>Trả lời đúng câu hỏi đi má</b>
+        <b>nlm: Trả lời đúng câu hỏi đi má</b>
       </P>
       <P>
-        Cái đó còn tùi xem ông đang code trong dự án nào nữa, to hay vừa và nhỏ,
-        tùy vào nhu cầu dự án khác nhau mà structure có thể khác nhau một chút
+        nklm: Cái đó còn tùi xem ông đang code trong dự án nào nữa, to hay vừa
+        và nhỏ, tùy vào nhu cầu dự án khác nhau mà structure có thể khác nhau
+        một chút
       </P>
     </>,
     <>
       <P>
         <b>
-          Hmm... tui đang muốn làm 1 cái website cũng không lớn lắm, hiện tại
-          có 1 vài tính năng thui
+          nlm: Hmm... tui đang muốn làm 1 cái website cũng không lớn lắm, hiện
+          tại có 1 vài tính năng thui
         </b>
         <br />
         <b>
           Cơ mà tui cũng dự đỉnh kiểu sau này thêm các tính năng mới nữa, sợ lúc
-          đó không biết thêm vào đâu, hay bug xong nhìn code tùm lum, khỏi fix
-          á
+          đó không biết thêm vào đâu, hay bug xong nhìn code tùm lum, khỏi fix á
         </b>
       </P>
       <P>
-        Oki chờ chút... Xem thử structure trong{" "}
+        nklm: Oki chờ chút... Xem thử structure trong{" "}
         <a
           target="__blank"
           href="https://github.com/phuongnam7899/personal-website"
@@ -68,30 +72,31 @@ export default {
     <>
       <P>
         <b>
-          ... Nhìn qua thì tui cũng tự hình dung được vài phần, mà vẫn có mấy
-          cái cần hỏi lại, đầu tiên là ngay ngoài có 2 file tui chưa thấy bao
-          giờ là <HighlightedText>craco.config</HighlightedText> và{" "}
+          nlm: ... Nhìn qua thì tui cũng tự hình dung được vài phần, mà vẫn có
+          mấy cái cần hỏi lại, đầu tiên là ngay ngoài có 2 file tui chưa thấy
+          bao giờ là <HighlightedText>craco.config</HighlightedText> và{" "}
           <HighlightedText>jsconfig.json</HighlightedText>, nó để làm gì thế
         </b>
       </P>
       <P>
-        2 file trên dùng để <Link to={'/blog/how-to-shorten-import-url'}>rút gọn link import</Link>, chưa liên quan gì lắm đến
-        structure lắm đâu, tui sẽ nói hôm khác nhé
+        nklm: 2 file trên dùng để{" "}
+        <Link to={"/blog/how-to-shorten-import-url"}>rút gọn link import</Link>,
+        chưa liên quan gì lắm đến structure lắm đâu, tui sẽ nói hôm khác nhé
       </P>
     </>,
     <>
       <P>
         <b>
-          Ò, thế trong <HighlightedText>/src</HighlightedText> chắc folder{" "}
+          nlm: Ò, thế trong <HighlightedText>/src</HighlightedText> chắc folder{" "}
           <HighlightedText>components</HighlightedText> để lưu mấy cái
           components mình sẽ dùng đi dùng lại nhỉ?
         </b>
       </P>
       <P>
         <P>
-          Đúng rồi, chỗ này có 1 lưu ý là mỗi component nên được gói gọn trong 1
-          component duy nhất, ví dụ khi muốn tạo 1 component "Text" đơn giản thì
-          folder sẽ như thế này:
+          nklm: Đúng rồi, chỗ này có 1 lưu ý là mỗi component nên được gói gọn
+          trong 1 component duy nhất, ví dụ khi muốn tạo 1 component "Text" đơn
+          giản thì folder sẽ như thế này:
         </P>
         <Accordion defaultExpanded>
           <AccordionSummary
@@ -129,36 +134,36 @@ export default {
     <>
       <P>
         <b>
-          Tại sao lại để tên file kia là{" "}
+          nlm: Tại sao lại để tên file kia là{" "}
           <HighlightedText>index.js</HighlightedText> mà không phải{" "}
           <HighlightedText>Text.js</HighlightedText>?
         </b>
       </P>
       <P>
-        Bình thường nếu để là <HighlightedText>Text.js</HighlightedText> thì nếu
-        muốn import component đó vào chỗ khác, ví dụ như vào file cùng bậc với
-        folder Text thì sẽ có dạng là:
-        <CodeBlock text='import {`{ Text }`} from "./Text/Text"'/>
+        nklm: Bình thường nếu để là <HighlightedText>Text.js</HighlightedText>{" "}
+        thì nếu muốn import component đó vào chỗ khác, ví dụ như vào file cùng
+        bậc với folder Text thì sẽ có dạng là:
+        <CodeBlock text='import {`{ Text }`} from "./Text/Text"' />
       </P>
       <P>
-        Nếu để <HighlightedText>index.js</HighlightedText> thì hệ thống sẽ tự
-        động lấy file index.js của folder chỉ cần:
-        <CodeBlock text='import {`{ Text }`} from "./Text"'/>
+        nklm: Nếu để <HighlightedText>index.js</HighlightedText> thì hệ thống sẽ
+        tự động lấy file index.js của folder chỉ cần:
+        <CodeBlock text='import {`{ Text }`} from "./Text"' />
       </P>
     </>,
     <>
       <P>
         <b>
-          Okie, với cả nhìn "Text/Text" cũng hơi kỳ. Rồi, vậy là xong cái{" "}
+          nlm: Okie, với cả nhìn "Text/Text" cũng hơi kỳ. Rồi, vậy là xong cái{" "}
           <HighlightedText>/components</HighlightedText>, thế còn những cái khác
           thì sao?
         </b>
       </P>
       <P>
         <P>
-          <HighlightedText>/helpers</HighlightedText> là chỗ để ném mấy cái hàm
-          được sử dụng nhiều trong app của mình vào, cố gắng mỗi hàm 1 file,
-          những hàm cùng nhóm thì có thể cho vào folder riêng:
+          nklm: <HighlightedText>/helpers</HighlightedText> là chỗ để ném mấy
+          cái hàm được sử dụng nhiều trong app của mình vào, cố gắng mỗi hàm 1
+          file, những hàm cùng nhóm thì có thể cho vào folder riêng:
         </P>
         <Accordion defaultExpanded>
           <AccordionSummary
@@ -193,8 +198,8 @@ export default {
     <>
       <P>
         <P>
-          <HighlightedText>/pages</HighlightedText> thì chỉ dùng để lưu các page
-          có trong app (thường mỗi page sẽ có 1 route riêng):
+          nklm: <HighlightedText>/pages</HighlightedText> thì chỉ dùng để lưu
+          các page có trong app (thường mỗi page sẽ có 1 route riêng):
         </P>
         <Accordion defaultExpanded>
           <AccordionSummary
@@ -242,7 +247,7 @@ export default {
     <>
       <P>
         <P>
-          Nếu ô có các custom hook thì có thể cho vào{" "}
+          nklm: Nếu ô có các custom hook thì có thể cho vào{" "}
           <HighlightedText>/hooks</HighlightedText>:
         </P>
         <Accordion defaultExpanded>
@@ -263,8 +268,8 @@ export default {
     <>
       <P>
         <P>
-          <HighlightedText>/styles</HighlightedText> thì dùng để chứa những cái
-          style chung (các biến, class,...):
+          nklm: <HighlightedText>/styles</HighlightedText> thì dùng để chứa
+          những cái style chung (các biến, class,...):
         </P>
         <Accordion defaultExpanded>
           <AccordionSummary
@@ -310,8 +315,8 @@ export default {
     <>
       <P>
         <P>
-          Nếu app của ông có kết nối với server backend nào đó (thường là có),
-          để hết các request đến các api vào{" "}
+          nklm: Nếu app của ông có kết nối với server backend nào đó (thường là
+          có), để hết các request đến các api vào{" "}
           <HighlightedText>/apis</HighlightedText>:
         </P>
         <Accordion defaultExpanded>
@@ -331,7 +336,10 @@ export default {
       </P>
     </>,
     <>
-      <b>Okie, chưa quen lắm nhưng tạm thời cứ thế đã, để thử áp dụng vào project sắp tới xem ổn không, xincamon</b>
-    </>
+      <b>
+        nlm: Okie, chưa quen lắm nhưng tạm thời cứ thế đã, để thử áp dụng vào
+        project sắp tới xem ổn không, xincamon
+      </b>
+    </>,
   ],
 };

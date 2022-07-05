@@ -1,7 +1,4 @@
-import {
-  HighlightedText,
-  P,
-} from "../../../components/PostDetail/components";
+import { HighlightedText, P } from "../../../components/PostDetail/components";
 export default {
   intro: { en: "", vi: "Trả lời như thế nào?" },
   tags: ["#ux", "#thinking"],
@@ -11,16 +8,16 @@ export default {
   pagesVi: [
     <>
       <P>
-        Ê, bây giờ có 1 cái ô tô và 1 cái xe máy xe máy chạy đua với nhau thì bên
-        nào thắng?
+        nklm: Ê, bây giờ có 1 cái ô tô và 1 cái xe máy xe máy chạy đua với nhau
+        thì bên nào thắng?
       </P>
       <P>
-        <b>Hỏi kỳ vậy, xe máy tuổi gì</b>
+        <b>nlm: Hỏi kỳ vậy, xe máy tuổi gì</b>
       </P>
     </>,
     <>
       <P>
-        Còn tùy,{" "}
+        nklm: Còn tùy,{" "}
         <a
           href="https://vtc.vn/bi-mat-ve-chiec-o-to-dau-tien-tren-the-gioi-ar674780.html"
           target={"_blank"}
@@ -38,74 +35,81 @@ export default {
         bây giờ thì khoảng gần 500km/h
       </P>
       <P>
-        <b>Ô có bảo là xe gì từ đầu đâu mà tui biết-.-</b>
+        <b>nlm: Ô có bảo là xe gì từ đầu đâu mà tui biết-.-</b>
       </P>
     </>,
     <>
       <P>
-        Ok, thế ô tô nhanh nhất thế giới và chiếc xe máy nhanh nhất thế giới bây
-        giờ đua với nhau, bên nào sẽ thắng?
+        nklm: Ok, thế ô tô nhanh nhất thế giới và chiếc xe máy nhanh nhất thế
+        giới bây giờ đua với nhau, bên nào sẽ thắng?
       </P>
       <P>
         <b>
-          Wait... t vừa search{" "}
+          nlm: Wait... t vừa search{" "}
           <a
             href="https://www.autoexpress.co.uk/best-cars/85932/what-fastest-car-world"
             target={"_blank"}
           >
             ô tô nhanh nhất
           </a>{" "}
-          bây h là hơn 500km/h, không hơn nhiều nhưng vẫn thừa sức win xe mày kia á
+          bây h là hơn 500km/h, không hơn nhiều nhưng vẫn thừa sức win xe mày
+          kia á
         </b>
       </P>
     </>,
     <>
       <P>
-        Còn tùy, xem 2 xe đua trên con đường như thế nào, nếu con đường đua
-        ngoằn nghoèo và chỉ rộng hơn độ rộng ô tô 1 chút, thì ô tô làm sao đi
-        được tốc độ cao được, còn xe máy thì có đó:v
+        nklm: Còn tùy, xem 2 xe đua trên con đường như thế nào, nếu con đường
+        đua ngoằn nghoèo và chỉ rộng hơn độ rộng ô tô 1 chút, thì ô tô làm sao
+        đi được tốc độ cao được, còn xe máy thì có đó:v
       </P>
       <P>
-        <b>Mé sao không bảo thế từ đầu đi .-.</b>
+        <b>nlm: Mé sao không bảo thế từ đầu đi .-.</b>
       </P>
     </>,
     <>
       <P>
-        Rồi rồi xin lỗi:v Giờ rõ ràng này, nếu ô tô nhanh nhất và xe máy nhanh
-        nhất đua trên đoạn đường thẳng tắp và rộng rãi, thì bên nào sẽ thắng?
+        nklm: Rồi rồi xin lỗi:v Giờ rõ ràng này, nếu ô tô nhanh nhất và xe máy
+        nhanh nhất đua trên đoạn đường thẳng tắp và rộng rãi, thì bên nào sẽ
+        thắng?
       </P>
       <P>
         <b>
-          hmmm... Tui biết rồi nhé, còn tùy vào xem lượng xăng trong mỗi xe và
-          quãng đường đua dài bao nhiêu đúng ko:v{" "}
+          nlm: hmmm... Tui biết rồi nhé, còn tùy vào xem lượng xăng trong mỗi xe
+          và quãng đường đua dài bao nhiêu đúng ko:v{" "}
         </b>
       </P>
       <P>
-        Bắt đầu hiểu r đấy:v thế bây h ô tô nhanh nhất và xe máy nhanh nhất đua
-        vs nhau trên quãng đường bằng phẳng thẳng tắp rộng rãi, với lượng xăng
-        đều đủ để đi hết quãng đường, thì bên nào thắng:v
+        nklm: Bắt đầu hiểu r đấy:v thế bây h ô tô nhanh nhất và xe máy nhanh
+        nhất đua vs nhau trên quãng đường bằng phẳng thẳng tắp rộng rãi, với
+        lượng xăng đều đủ để đi hết quãng đường, thì bên nào thắng:v
       </P>
       <P>
-        <b>... Thôi còn tùy gì nữa ông nói luôn đi cho lẹ</b>
+        <b>nlm: ... Thôi còn tùy gì nữa ông nói luôn đi cho lẹ</b>
       </P>
-      <P>Còn tùy xem thằng lái xe có ngủ quên không nữa:v</P>
+      <P>nklm: Còn tùy xem thằng lái xe có ngủ quên không nữa:v</P>
       <P>
-        <b>Thế thì chịu.-. Mà tự nhiên ông hỏi tui mấy cái đó để làm gì vậy?</b>
+        <b>
+          nlm: Thế thì chịu.-. Mà tự nhiên ông hỏi tui mấy cái đó để làm gì vậy?
+        </b>
       </P>
-      <P>Còn tùy:v</P>
+      <P>nklm: Còn tùy xem ông đang muốn gì:v</P>
     </>,
     <>
-      <P>Tóm lại:</P>
+      <P>Người ngoài cuộc: tóm lại sau cuộc nói chuyện của 2 đứa kia:</P>
       <P>
-        - <HighlightedText>Context</HighlightedText> là rất quan trong trong việc trả lời hay đưa ra quyết định, nên
-        giảm tối thiểu assumption
+        - <HighlightedText>Context</HighlightedText> là rất quan trong trong
+        việc trả lời hay đưa ra quyết định, nên giảm tối thiểu assumption
       </P>
-      <P>- Hãy <HighlightedText>chọn sân chơi</HighlightedText> mà mình có thể phát huy hết khả năng</P>
       <P>
-        - Dù máy móc có đỉnh thế nào thì <HighlightedText>con người vẫn là trung tâm</HighlightedText> (Có thể phản
-        biện trong câu truyện trên là nhỡ ông lái ngủ quên nhưng xe do AI lái
-        thì sao, nhưng AI bản thân nó đã là{" "}
-        <b>Nhân tạo</b> rồi đó thôi)
+        - Hãy <HighlightedText>chọn sân chơi</HighlightedText> mà mình có thể
+        phát huy hết khả năng
+      </P>
+      <P>
+        - Dù máy móc có đỉnh thế nào thì{" "}
+        <HighlightedText>con người vẫn là trung tâm</HighlightedText> (Có thể
+        phản biện trong câu truyện trên là nhỡ ông lái ngủ quên nhưng xe do AI
+        lái thì sao, nhưng AI bản thân nó đã là <b>Nhân tạo</b> rồi đó thôi)
       </P>
     </>,
   ],
