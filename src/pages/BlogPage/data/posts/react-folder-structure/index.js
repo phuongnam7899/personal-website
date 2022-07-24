@@ -22,7 +22,8 @@ export default {
   },
   slug: "react-folder-structure-for-small-medium-projects",
   pagesEng: [],
-  previewImg: "https://miro.medium.com/max/1400/1*gWsd2r4vlAGMfQtQteYpHg.png",
+  previewImg:
+    "https://lh3.googleusercontent.com/pw/AM-JKLXljnjqRW4y3Aeoc61l0iL3kCavufewA-ZgNWNExnD2KzsXHO76kmNM-lwO4eENQoGfflYem9rWyuSFp0Dmn73eXmoIDcC75Ity1B-RBUFyeA4gxqgR48LdFF5aZzQdE9V3qBd_kW4WWcDlkuq7CrPGBA=w845-h893-no?authuser=0",
   pagesVi: [
     <>
       <P>

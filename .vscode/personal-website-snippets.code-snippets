@@ -26,6 +26,7 @@
       "tags: ['#$2'],",
       "title: {en: '', vi:'$3'},",
       "slug: '$4',",
+      "previewImg: '',",
       "pagesEn: [],",
       "pagesVi: [],",
       "});"

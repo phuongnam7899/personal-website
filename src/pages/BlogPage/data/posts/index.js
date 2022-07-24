@@ -5,21 +5,23 @@ import itDepends from "./it-depends";
 import thoughtAboutModest from "./thought-about-modest";
 import releaseNoteV110 from "./release-note-v-1-1-0";
 import fishBoneDiagram from "./fish-bone-diagram";
+import conceptMap from "./concept-map";
 
 export const posts = [
+  conceptMap,
   fishBoneDiagram,
   thoughtAboutModest,
   releaseNoteV110,
   itDepends,
   howToShortenImportUrl,
   reactFolderStructure,
-  releaseNoteV100
+  releaseNoteV100,
 ];
 export const hotPosts = [
+  conceptMap,
   fishBoneDiagram,
   thoughtAboutModest,
   reactFolderStructure,
   howToShortenImportUrl,
   itDepends,
 ];
-
