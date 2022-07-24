@@ -1,4 +1,6 @@
 import { CtaButton } from "@components";
+import { useContext } from "react";
+import { AppContext } from "src/context";
 import { DoubleImageReveal } from "../DoubleImageReveal";
 import img1 from "./image-1.jpg";
 import img2 from "./image-2.jpg";
@@ -9,16 +11,19 @@ import "./index.scss";
 const images = [img1, img2, img3, img4];
 
 export const Banner = () => {
+  const { t } = useContext(AppContext);
   return (
     <div className="banner">
       <div className="intro">
-        <div className="welcome">Welcome to</div>
+        <div className="welcome">{t("Welcome to")}</div>
         <div className="web-name">nklm</div>
         <div className="description">
-          My life mission: explore weird/interesting/helpful things in life
+          {t(
+            "My life mission: explore weird/interesting/helpful things in life"
+          )}
         </div>
         <CtaButton to="/about">
-          About me <i class="fas fa-long-arrow-alt-right"></i>
+          {t("About nklm")} <i class="fas fa-long-arrow-alt-right"></i>
         </CtaButton>
       </div>
       <DoubleImageReveal images={images} width={35 * 16} height={35 * 16} />
