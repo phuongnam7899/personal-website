@@ -54,7 +54,7 @@ export const SubPageIntro = () => {
           </div>
         </FlipCardFront>
         <FlipCardBack>
-          <Link to="/playground" className="sub-page-intro-item back">
+          <Link to="/squiggly" className="sub-page-intro-item back">
             <i class="far fa-laugh-squint big-icon"></i>
             <div className="intro">{t("Let's go to squiggle ground!")}</div>
           </Link>
