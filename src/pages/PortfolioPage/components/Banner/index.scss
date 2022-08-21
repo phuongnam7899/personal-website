@@ -7,18 +7,36 @@
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+  overflow: hidden;
   .text {
     text-align: center;
   }
   h3 {
     margin: 1rem 0rem;
   }
-  .avatar {
+  .avatar-container {
+    position: relative;
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
     margin-bottom: 2rem;
-    object-fit: cover;
+    height: 200px;
+    .avatar {
+      width: 120%;
+      height: 120%;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: -1rem;
+      animation: spinThrough 10s linear infinite;
+    }
+    .avatar-placeholder {
+      width: 100%;
+      height: 100%;
+      border: 1px dashed black;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+    }
   }
   .btns-container {
     margin-top: 1rem;

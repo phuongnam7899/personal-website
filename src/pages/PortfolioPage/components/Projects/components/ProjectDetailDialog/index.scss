@@ -1,4 +1,4 @@
-@import '@styles/common.scss';
+@import "@styles/common.scss";
 
 .project-detail-dialog {
   width: 75vw;
@@ -19,9 +19,9 @@
       margin-right: 0.25rem;
     }
     a {
-        &:hover {
-            color: $primary-color;
-        }
+      &:hover {
+        color: $primary-color;
+      }
     }
     margin-bottom: 1rem;
   }
@@ -35,7 +35,7 @@
     flex-direction: column;
     margin-top: 1rem;
     .feature-name {
-        margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     img {
       width: 100%;

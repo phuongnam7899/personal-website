@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ProjectDetailDialog, ProjectItem } from "./components";
+import { ProjectDetailDialog, ProjectItem, ProjectItem2 } from "./components";
 import "./index.scss";
 
 const workedProjects = [
   {
     name: "CRM Web App",
-    category: 'Tech',
+    category: "Tech",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLWsjydOPdZUfsF1eM7NN1RIi8OOPiFEhqCbAwNyKMMdBV5voIf772N3alHP7Ha4eXDkbcxpBe3LcNzKrUxiIUM3dEL3lt31V7L6ftGcplGews_A_SgHdhgHGBVYKFtacGSH_afzXDj7oWAP9eEit2QwDw=w1895-h887-no?authuser=0",
     tags: ["Developer", "UI/UX Designer", "Customer Supporter", "PO"],
@@ -36,7 +36,7 @@ const workedProjects = [
   },
   {
     name: "LMS Web App",
-    category: 'Tech',
+    category: "Tech",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLVDZQrt-Ma3DPpB4r5wfjRP0Op4-mvee5s670DfPwesdVbYGhmLiHWuXeDEYjdipt5IcN7EwYDJYe69nCDCHdWmmazh9IdZ9wlTEDT7xvxopIfG1bEKkPZhfeEc5QTGE9Bgddr-T_Tqy-A6yERIE6PvCA=w1920-h890-no?authuser=0",
     tags: ["Developer", "UI/UX Designer", "Customer Supporter"],
@@ -76,7 +76,7 @@ const workedProjects = [
   },
   {
     name: "Marketing Website & CMS Web App",
-    category: 'Tech',
+    category: "Tech",
     url: "https://mindx.edu.vn",
     sourceCode: "https://mindx.edu.vn",
     thumbnailImg:
@@ -117,7 +117,7 @@ const workedProjects = [
 const sideProjects = [
   {
     name: "Club's Website",
-    category: 'Tech',
+    category: "Tech",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLVH-qeh3K9G4UqFrZ-tmC3i9Yw9U3Amj4EyOUHL3DGjgpE5nf9wcIjYzIMz5SHrsHq2TkGPUZnSMQln9sojtbw3I4mhMen50O91vTFQoe56KY_ap8ln1QX3IJ_uVRFtGI2bgZScDlmh_ChUD2z0f-x72w=w1891-h887-no?authuser=0",
     tags: ["PM", "PO", "UI/UX Designer", "Developer"],
@@ -153,7 +153,7 @@ const sideProjects = [
   },
   {
     name: "Hockillard Game",
-    category: 'Tech',
+    category: "Tech",
 
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLXeuVgNeigB79KvWix-_gi9GjCgeSCZ6N7WtQeuPAYsfWn9Hl3HHOd-S0VpwyMPAwOMuEBx9PhxkUy5N_csBUsU79ifLATtNlKUgzhFnGIg9u4GEw-1-YSMP5oD4jdnY2nnsb75o9O2eBpHWdAQm4MxzQ=w1122-h700-no?authuser=0",
@@ -181,7 +181,7 @@ const sideProjects = [
   },
   {
     name: "SupremeMage Game",
-    category: 'Tech',
+    category: "Tech",
 
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLVzCd1y6FnVQ-HUvYEsv8VlhwSO-vvD4wMkUIutbRQ-EDo7fIfPPGzRVWLwK2LHRJiI5rg4b_KITn-5muNOjnonzLL0E6fsQ1NnDRdvH_XBvuGe4Hzy7Or-rTbuqIDhpdyNO2jUiNw5k6WZcN_AhvEoAw=w1616-h840-no?authuser=0",
@@ -200,7 +200,7 @@ const sideProjects = [
   },
   {
     name: "French Test",
-    category: 'Tech',
+    category: "Tech",
 
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLULJruo-MTWm6CwcHU1zjS-5F6hYfq_NEOXpO2lG7QimL-tUfj6s-hoHFlSmSeFEBRlcZ9kWKxpUAcm6bU2jJkHjMFUoaXp6dWscqnRBka1r_W4o8kirHnXm-OzSHnOBzIsEWtjg9VvkD4N5tN9h_z3Vg=w1896-h863-no?authuser=0",
@@ -229,7 +229,7 @@ const sideProjects = [
   },
   {
     name: "Canva Instagram Post Template",
-    category: 'Design',
+    category: "Design",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLVmANFCBDEc3YcrffP-M77j8DI4mKwGmYwekqeK_681lGvAwt3LvdSZ-GjRI31vUFTDeOOmD1yGX9z6R-vVikgs_i-CXiUFMyum_7rU7_4vOurBchv54sWCUU_3GvZF4K-LTQzbYgJaxw0KB8glAHeb_g=w1112-h893-no",
     tags: ["UI/UX Designer"],
@@ -260,8 +260,8 @@ const sideProjects = [
   },
   {
     name: "FamilyNutri Mobile App",
-    category: 'Design',
-    url: 'https://www.figma.com/file/Ho6M3hvLKUSXl7qeTKEABQ/FamilyNutri',
+    category: "Design",
+    url: "https://www.figma.com/file/Ho6M3hvLKUSXl7qeTKEABQ/FamilyNutri",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLWAmF0bzJHrpWzw6K6moqS1UE6Bw0fgViVtpNrcW32pR2oj-cexTLTQH-jqZ9ORmfC9UhEvTCkDm5HCVED53zBN2AbCKxKh6i44T1REoqOJlKExq2hcc9qaWkgh2NPwy2XUg9SBorFczie6wSTcnqRbug=w1587-h893-no?authuser=0",
     tags: ["UI/UX Designer"],
@@ -282,8 +282,8 @@ const sideProjects = [
   },
   {
     name: "Tuoitre News Reconcept",
-    category: 'Design',
-    url: 'https://www.figma.com/file/uvkv3QRCxJyExNoIM2DFkE/Tuoi-Tre-News-(remake)?node-id=4%3A17',
+    category: "Design",
+    url: "https://www.figma.com/file/uvkv3QRCxJyExNoIM2DFkE/Tuoi-Tre-News-(remake)?node-id=4%3A17",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLUGjqRirLyUkR9A_Mvrpu1sJisCN4jQRoIbfswQZtfsV53dblfs_wUQirN6c7pdfclCcAsXbLaMOLrkfKW6fFeHIqaQMuIlEpZV2_yuqVfP18w3efNdkO8Ltoe-msHyAksWPoXE71JvfeAgfMFGAwHcHQ=w1480-h893-no?authuser=0",
     tags: ["UI/UX Designer"],
@@ -319,10 +319,10 @@ const sideProjects = [
   },
   {
     name: "Mentor Finding Web App",
-    category: 'Tech',
+    category: "Tech",
     thumbnailImg:
       "https://lh3.googleusercontent.com/pw/AM-JKLV7gWoCEYGa7CzjtZ9nH3AFNgkfXdLaBieLZAEhfENYKRiXe8LVroALPmLMfjfsSxVJiBeZbW56etsmxBrP8R2_Bu8SG015b7-ynNIE3bCyK6vHMRgLzt-49N6yKq7e6TSIg13RyxXxSLTo9S7zTOyTXw=w1470-h893-no?authuser=0",
-    tags: ["UI/UX Designer","Developer"],
+    tags: ["UI/UX Designer", "Developer"],
     description:
       "I remade the https://tuoitre.vn/ to be cleaner and more mordern",
     features: [
@@ -386,27 +386,27 @@ export const Projects = () => {
   return (
     <div className="projects-section" id="projects-section">
       <h2 className="section-title">Products I worked in</h2>
-      <div className="projects-list">
-        {workedProjects.map((project) => {
+      <div className="projects-list-2">
+        {[...workedProjects, ...sideProjects].map((project) => {
           return (
-            <ProjectItem
+            <ProjectItem2
               project={project}
               setSelectedProject={setSelectedProject}
             />
           );
         })}
       </div>
-      <h2 className="section-title">Other side projects</h2>
-      <div className="projects-list">
+      {/* <h2 className="section-title">Other side projects</h2> */}
+      {/* <div className="projects-list-2">
         {sideProjects.map((project) => {
           return (
-            <ProjectItem
+            <ProjectItem2
               project={project}
               setSelectedProject={setSelectedProject}
             />
           );
         })}
-      </div>
+      </div> */}
       {selectedProject && (
         <ProjectDetailDialog
           project={selectedProject}
