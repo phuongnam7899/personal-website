@@ -65,7 +65,6 @@ export const Banner = () => {
   useEffect(() => {
     changeAvatarIntervalRef.current = setInterval(() => {
       changeAvatar();
-      console.log("asd");
     }, 5000);
     return () => {
       changeAvatarIntervalRef.current &&
@@ -92,9 +91,9 @@ export const Banner = () => {
       </div>
 
       <div className="text">Hi, i'm Nam</div>
-      <h3 className="text">I want to design clean & usable products</h3>
+      <h3 className="text">I want to make clean & usable products</h3>
       <div className="text">
-        1.5-year experience in web development, 1 in UI/UX designing and Product
+        2-year experience in web development, 1 in UI/UX designing and Product
         Owning,
       </div>
       <div className="text">more and can be more...</div>

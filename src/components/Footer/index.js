@@ -31,7 +31,7 @@ export const Footer = () => {
       </div>
       <div className="copyright">
         <i className="far fa-copyright"></i> 2022 nklm{" "}
-        <span className="version">v1.1.0</span>
+        <span className="version">v1.2.0</span>
       </div>
     </footer>
   );
