@@ -327,7 +327,7 @@ const sideProjects = [
       "https://lh3.googleusercontent.com/pw/AM-JKLUGjqRirLyUkR9A_Mvrpu1sJisCN4jQRoIbfswQZtfsV53dblfs_wUQirN6c7pdfclCcAsXbLaMOLrkfKW6fFeHIqaQMuIlEpZV2_yuqVfP18w3efNdkO8Ltoe-msHyAksWPoXE71JvfeAgfMFGAwHcHQ=w1480-h893-no?authuser=0",
     tags: ["UI/UX Designer"],
     description:
-      "I remade the https://tuoitre.vn/ to be cleaner and more mordern",
+      "I remade the https://tuoitre.vn/ to be cleaner and more modern",
     features: [
       {
         name: "Main posts",
@@ -363,7 +363,7 @@ const sideProjects = [
       "https://lh3.googleusercontent.com/pw/AM-JKLV7gWoCEYGa7CzjtZ9nH3AFNgkfXdLaBieLZAEhfENYKRiXe8LVroALPmLMfjfsSxVJiBeZbW56etsmxBrP8R2_Bu8SG015b7-ynNIE3bCyK6vHMRgLzt-49N6yKq7e6TSIg13RyxXxSLTo9S7zTOyTXw=w1470-h893-no?authuser=0",
     tags: ["UI/UX Designer", "Developer"],
     description:
-      "I remade the https://tuoitre.vn/ to be cleaner and more mordern",
+      "I remade the https://tuoitre.vn/ to be cleaner and more modern",
     features: [
       {
         name: "Home Page",
