@@ -1,5 +1,5 @@
 import { CommingSoon } from "@components";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "src/context";
 import { useBreakout } from "../../hooks";
 import { Banner, SubPageIntro } from "./components";

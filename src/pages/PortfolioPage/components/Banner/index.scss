@@ -32,10 +32,13 @@
     .avatar-placeholder {
       width: 100%;
       height: 100%;
-      border: 1px dashed black;
+      border: 1px dashed $box-shadow-dark;
       border-radius: 50%;
       background-size: cover;
       background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   .btns-container {
@@ -78,11 +81,11 @@
     position: fixed;
     width: 60vw;
     height: 90vh;
+    overflow-y: auto;
     top: 5vh;
     left: 50vw;
     transform: translateX(-50%);
     background-color: #fff;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,27 +93,6 @@
     box-shadow: 0 0 4px $box-shadow-light;
     .rpv-core__text-layer {
       display: none;
-    }
-    .actions {
-      position: fixed;
-      right: -1rem;
-      top: 0.5rem;
-      transform: translateX(-50%);
-      button {
-        width: 1.75rem;
-        height: 1.75rem;
-        margin-left: 0.5rem;
-        cursor: pointer;
-        background-color: $lightest-grey;
-        &:hover {
-          .fa-times {
-            color: $error;
-          }
-          .fa-download {
-            color: $primary-color;
-          }
-        }
-      }
     }
   }
 }

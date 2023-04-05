@@ -1,10 +1,10 @@
-import { Viewer } from "@react-pdf-viewer/core";
 import cv from "./CV.pdf";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
-import { Dialog, Loading } from "@components";
+import { Dialog, DialogActions } from "@components";
 import _ from "lodash";
+import { CV } from "./components/CV";
 
 const avatarImgs = [
   "https://i.pinimg.com/564x/7e/3f/4c/7e3f4c60496ce171c102fd2bea7013ce--so-funny-funny-shit.jpg",
@@ -17,30 +17,13 @@ export const Banner = () => {
   const [showCV, setShowCV] = useState(false);
   const memorizedCV = useMemo(() => {
     return (
-      <Dialog>
+      <Dialog
+        onCloseDialog={() => {
+          setShowCV(false);
+        }}
+      >
         <div className="cv">
-          <Viewer
-            renderLoader={() => {
-              return <Loading />;
-            }}
-            scrollMode=""
-            fileUrl={cv}
-            defaultScale={1.5}
-          />
-          <div className="actions">
-            <button>
-              <Link to={cv} target="_blank" download="CV-Nguyen-Phuong-Nam">
-                <i class="fas fa-download"></i>
-              </Link>
-            </button>
-            <button
-              onClick={() => {
-                setShowCV(false);
-              }}
-            >
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
+          <CV />
         </div>
       </Dialog>
     );
@@ -87,16 +70,20 @@ export const Banner = () => {
             backgroundImage: currentAvatar ? `url(${currentAvatar})` : "none",
           }}
           className="avatar-placeholder"
-        ></div>
+        >
+          <span>{!currentAvatar ? "Wait for the pizza..." : ""}</span>
+        </div>
       </div>
 
-      <div className="text">Hi, i'm Nam</div>
-      <h3 className="text">I want to make clean & usable products</h3>
+      <div className="text">Hi, I'm Nam</div>
+      <h3 className="text">I want to maximize the product outcomes</h3>
       <div className="text">
-        2-year experience in web development, 1 in UI/UX designing and Product
-        Owning,
+        1-year experience in product management roles (PO, PM Trainee) and
       </div>
-      <div className="text">more and can be more...</div>
+      <div className="text">
+        2+ years in others roles of product team (UX/UI, Developer)
+      </div>
+      {/* <div className="text">more and can be more...</div> */}
       <div className="btns-container">
         <a
           onClick={() => {

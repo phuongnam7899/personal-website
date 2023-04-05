@@ -1,0 +1,133 @@
+@import "@styles/common.scss";
+
+.cv-container {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  width: 100%;
+  max-width: 750px;
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    .avatar {
+      width: 13.5rem;
+      height: 18rem;
+      object-fit: cover;
+    }
+    .name {
+      font-size: xx-large;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      font-size: large;
+    }
+  }
+  .section {
+    margin: 3rem 0rem;
+    .section-title {
+      min-width: 50%;
+      max-width: 50%;
+      font-size: x-large;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      & > span {
+        border-bottom: 3px solid $dark-color;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    .link {
+      width: 50%;
+      margin-bottom: 1rem;
+      &.disabled-click {
+        pointer-events: none;
+      }
+      & a {
+        color: $dark-color;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .general-info-section {
+    display: flex;
+    .general-info {
+      padding-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      & > div {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .experience-section {
+    .experience {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .experience-item {
+        display: flex;
+        .time {
+          min-width: 50%;
+          .period-time {
+            margin-bottom: 0.25rem;
+          }
+          .period-length {
+            font-style: italic;
+          }
+        }
+        .detail {
+          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          .title {
+            font-weight: bold;
+            font-size: 1.125rem;
+          }
+          .company {
+            font-weight: 600;
+            color: $darker-grey;
+          }
+          .description {
+            gap: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            .description-item {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .skills-tools-section {
+    .skills-tools {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .skills-tools-item {
+        display: flex;
+        .category {
+          min-width: 50%;
+          margin-bottom: 0.25rem;
+        }
+        .items {
+          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          .description-item {
+            &:first-child,
+            &:nth-child(2) {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

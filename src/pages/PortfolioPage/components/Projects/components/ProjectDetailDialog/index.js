@@ -48,7 +48,7 @@ export const ProjectDetailDialog = ({ project, onCloseDialog }) => {
             "Private/Not available"
           )}
         </div>
-        <b className="title">Some images of its features:</b>
+        <b className="title">Some images of its core features:</b>
         <i>(Because of privacy, data in images may be made up)</i>
         <div className="features-images">
           {features.map(({ name, image }) => {

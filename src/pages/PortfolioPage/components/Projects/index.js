@@ -4,6 +4,45 @@ import "./index.scss";
 
 const workedProjects = [
   {
+    name: "Bao Moi",
+    category: "Tech",
+    url: "https://play.google.com/store/apps/details?id=com.epi&hl=en_US",
+    tags: ["Product Management Trainee"],
+    description:
+      "A mobile app that update and distribute news from other sources",
+    features: [
+      {
+        name: "Online using: read/listen news, watch video",
+        image:
+          "https://lh3.googleusercontent.com/pw/AMWts8DeL10NnlBiUJRLEJeEwR4eWCUny_B-MhKXeBuLxVdKptqWOu34KJliss9P2oZ6gePGVi7hTsGJLuIhoaanYQ_j1DnR1MtjaWTZP4LRUzdFRyF6gzBGiOjhLrVbOTlgVhW78obxvoBMAbzZx3W6vWGz7Q=w1367-h812-s-no",
+      },
+      {
+        name: "Offline using: download news by category, and read later while do not have internet connection",
+        image:
+          "https://lh3.googleusercontent.com/pw/AMWts8DObr747saX1ZEtz1I5igTIOE7v305i8iaYR0pB0Q9GZ8a1PsHk_6TGYfj-epngkeyWoBdURDcRdUnBBJiJsN52-unaUDdtk7hpGBupWNb8mLxH7XnPPcQqEox5NqKYlAYLkHoGK8KaOGiPeD_O8T1sKg=w1367-h815-s-no",
+      },
+    ],
+    thumbnailImg:
+      "https://play-lh.googleusercontent.com/P8D-vfnCmeaP3b3pbS_JmWlDkGGYaPg1xE4rOXMWPiTsL8fKlpsTxgVOkWj7w1ryx0pC",
+  },
+  {
+    name: "Singapore Examination & Accessment Board",
+    category: "Tech",
+    url: "https://www.seab.gov.sg/",
+    thumbnailImg:
+      "https://lh3.googleusercontent.com/pw/AMWts8BIgd4U_4PpJRqJtr5Fot9W67QjZnEEXVMb_M_AEUz3uO-j4OUcbFwzAsIdkJHuJFq2SXluQjD_jm3d54Omr_qk5R4Gzc4K4kNKVpMsPc-seQn2HQEcNwpfkTTdqK6n8sNT69nrVR_EbZPCmAIPI8l6ag=w241-h227-s-no?authuser=0",
+    tags: ["Project Team Lead", "Developer"],
+    description:
+      "Product for Singapore government to manage the examination with wide range of user roles: candidates, operation admin, coordinator,...",
+    features: [
+      {
+        name: "Candidate Portal (For Singaporean candidate to sign up and register for exam, take attendance for the exam, see the exam result,...)",
+        image:
+          "https://lh3.googleusercontent.com/pw/AMWts8CYZdKXM_0Clr6TZB8OGBJG07D3pK6AiOSivuTTsODGUbwvybJE7kNodDFEJvdmTO28bXYUb0UQBFgGhBk4ui7K_ZVK8pHLhVqIxS8eVVcaCQf4drydOvAIkU26AegJQMSAyHV2OOJKXtnq8dFui7O2vg=w1885-h888-s-no",
+      },
+    ],
+  },
+  {
     name: "CRM Web App",
     category: "Tech",
     thumbnailImg:
