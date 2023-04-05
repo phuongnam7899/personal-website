@@ -363,7 +363,7 @@ const sideProjects = [
       "https://lh3.googleusercontent.com/pw/AM-JKLV7gWoCEYGa7CzjtZ9nH3AFNgkfXdLaBieLZAEhfENYKRiXe8LVroALPmLMfjfsSxVJiBeZbW56etsmxBrP8R2_Bu8SG015b7-ynNIE3bCyK6vHMRgLzt-49N6yKq7e6TSIg13RyxXxSLTo9S7zTOyTXw=w1470-h893-no?authuser=0",
     tags: ["UI/UX Designer", "Developer"],
     description:
-      "I remade the https://tuoitre.vn/ to be cleaner and more modern",
+      "A platform to connect mentors and mentees in different subjects",
     features: [
       {
         name: "Home Page",
