@@ -240,14 +240,14 @@ const LinksSection = ({ links }) => {
 const Header = () => {
   return (
     <div className="header">
-      <img
+      {/* <img
         src="https://avatars.githubusercontent.com/u/5785200?v=4"
         alt="img"
         className="avatar"
-      />
+      /> */}
       <div className="name-and-title">
         <div className="name">NGUYEN PHUONG NAM</div>
-        <div className="title"> Web developer | UX/UI Designer</div>
+        <div className="title"> Junior Product Manager | Product Executive</div>
       </div>
     </div>
   );
