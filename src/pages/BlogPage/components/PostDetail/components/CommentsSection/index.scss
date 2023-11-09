@@ -1,58 +1,58 @@
-@import '@styles/common.scss';
+@import "@styles/common.scss";
 
 .comments-section {
-    margin: 1rem 0;
-    padding-top: 1rem;
-    border-top: 2px solid $lightest-grey;
-    .title {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-        font-size: 1.1rem;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: 2px solid $lightest-grey;
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  .add-comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .comment-input {
+      resize: none;
+      outline: none;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+      border: 2px solid rgb(194, 194, 194);
+      margin-bottom: 0.5rem;
+      transition: all 0.2s ease-in-out;
+      &:focus {
+        border: 2px solid $primary-color;
+      }
     }
-    .add-comment {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        .comment-input {
-            resize: none;
-            outline: none;
-            width: 100%;
-            padding: 0.5rem 1rem;
-            border-radius: 2px;
-            border: 2px solid rgb(194, 194, 194);
-            margin-bottom: 0.5rem;
-            transition: all 0.2s ease-in-out;
-            &:focus {
-                border: 2px solid $primary-color;
-            }
-        }
-        button {
-            margin-left: 0.5rem;
-            padding: 0.5rem 1rem;
-            height: fit-content;
-            // border: 1px solid $primary-color;
-            font-weight: bold;
-            transition: all 0.1s ease-in-out;
-            background-color: $primary-color;
-            color: #fff;
-            cursor: pointer;
-            &:hover {
-                background-color: $primary-color-light;
-                color: #000;
-            }
-        }
+    button {
+      margin-left: 0.5rem;
+      padding: 0.5rem 1rem;
+      height: fit-content;
+      // border: 1px solid $primary-color;
+      font-weight: bold;
+      transition: all 0.1s ease-in-out;
+      background-color: $primary-color;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary-color-light;
+        color: #000;
+      }
     }
-    .comment-item {
-        margin-bottom: 1rem;
-        max-width: 100%;
-        .name {
-            margin-bottom: 0.5rem;
-        }
-        .content {
-            max-width: 100%;
-            overflow-wrap: break-word;
-        }
+  }
+  .comment-item {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    .name {
+      margin-bottom: 0.5rem;
     }
+    .content {
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+  }
 }

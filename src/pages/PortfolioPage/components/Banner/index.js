@@ -83,21 +83,22 @@ export const Banner = () => {
       <div className="text">
         2+ years in others roles of product team (UX/UI, Developer)
       </div>
+      <div className="text">I'm really interested in game industry</div>
       {/* <div className="text">more and can be more...</div> */}
       <div className="btns-container">
-        <a
+        {/* <a
           onClick={() => {
             setShowCV(true);
           }}
           className="btn view-cv-btn"
         >
           View my CV
-        </a>
+        </a> */}
         <a className="btn view-prj-btn" href="#projects-section">
-          See my work
+          See my works
         </a>
       </div>
-      {showCV && memorizedCV}
+      {/* {showCV && memorizedCV} */}
     </div>
   );
 };

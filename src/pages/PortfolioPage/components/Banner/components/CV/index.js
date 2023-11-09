@@ -247,7 +247,7 @@ const Header = () => {
       /> */}
       <div className="name-and-title">
         <div className="name">NGUYEN PHUONG NAM</div>
-        <div className="title"> Junior Product Manager | Product Executive</div>
+        <div className="title"> Product Owner | Product Executive</div>
       </div>
     </div>
   );

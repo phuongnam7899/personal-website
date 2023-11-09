@@ -44,7 +44,7 @@ export class FirestoreArticle {
       createdAt: new Date().getTime(),
     });
     this.comments = [...this.comments, newComment];
-    console.log('this comment', this.comments);
+    console.log("this comment", this.comments);
     updateArticleComments(this.id, this.comments);
   }
 }
@@ -68,14 +68,12 @@ async function fetchArticleBySlug(slug) {
   return foundArticle ? new FirestoreArticle(foundArticle) : undefined;
 }
 
-
-
 async function updateArticleComments(id, newComments) {
-const comments = newComments.map(item => {
+  const comments = newComments.map((item) => {
     console.log(item);
-    return {content: item.content, createdAt: item.createdAt}
-});
-console.log('comments', comments);
+    return { content: item.content, createdAt: item.createdAt };
+  });
+  console.log("comments", comments);
   await updateDoc(doc(firebaseFirestore, firestoreCollections.articles, id), {
     comments,
   });
